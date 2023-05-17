@@ -9,32 +9,37 @@ import time
 
 e = threading.Event()
 
-def read():
-    line=10 
-    while not e.is_set():
-        
-        if not line:
-            print("EOF, nothing to read")
-            e.clear()
-            break
+lines=None
 
-        print("Reading from file A")
-        line-=5
-        time.sleep(2)
-        e.set()
-        e.wait()
-        
+def read():
+    global lines
+    n=1
+    while True:
+        if not e.is_set():
+            with open('read.txt','r') as fp:
+                print("Reading from file A")        
+                try:    
+                    lines = fp.readlines()[n-1:n+4]
+                    n=n+5
+                except:
+                    lines = fp.readlines()[n:]
+                    print("Here")
+                    e.clear()
+                    return
+            time.sleep(.2)
+            e.set()
+            print(n)
         
         
 
 def write():
     e.wait()
     while e.is_set():
-        print("Writing to file B")
-        time.sleep(2)
+        with open('write.txt','a') as fp:
+            print("Writing to file B")
+            fp.writelines(lines)
         e.clear()
-        if not e.is_set():
-            break    
+        time.sleep(.2)
         e.wait()
 
 t1 = threading.Thread(target=read)
@@ -42,3 +47,7 @@ t2 = threading.Thread(target=write)
 
 t1.start()
 t2.start()
+
+
+# with open('read.txt','w') as fp:
+#     fp.writelines([f"Line {i}\n" for i in range(1,53)])
