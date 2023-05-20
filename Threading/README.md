@@ -30,7 +30,7 @@ https://youtu.be/MbZQ8Mz8xeM
 
 ### RLock
 Rlock can be acquired and released multiple times where normal lock cannot be.
-https://www.geeksforgeeks.org/python-difference-between-lock-and-rlock-objects/
+https://www.geeksforgeeks.org/python-difference-between-lock-and-rlock-objects/ [difference-between-lock-and-rlock]
 
 ### Semaphore
 Semaphore can be used to limit the access to the shared resources with limited capacity.
