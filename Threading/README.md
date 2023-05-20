@@ -14,7 +14,7 @@ Applications of multithreading:
 5. Applications (to reduce execution time)
 
 
-### Thread pool executer
+## Thread pool executer
 thread pool executer is in concurrent.futures module
 
 A future or promise can be thought of as a value that will eventually become available.
@@ -23,7 +23,7 @@ http://dist-prog-book.com/chapter/2/futures.html
 
 https://en.wikipedia.org/wiki/Futures_and_promises
 
-### Lock
+## Lock
 Lock is a thread synchronization technique used to avoid race condtion.
 
 https://en.wikipedia.org/wiki/Lock_(computer_science)
@@ -32,12 +32,12 @@ when a lock is acquired by a thread on critical section then no other thread can
 
 https://youtu.be/MbZQ8Mz8xeM
 
-### RLock
+## RLock
 Rlock can be acquired and released multiple times where normal lock cannot be.
 
 https://www.geeksforgeeks.org/python-difference-between-lock-and-rlock-objects/
 
-### Semaphore
+## Semaphore
 Semaphore can be used to limit the access to the shared resources with limited capacity.
 
 https://en.wikipedia.org/wiki/Semaphore_(programming) Read the Library analogy to understand better.
@@ -46,12 +46,12 @@ Semaphore being counter based lock allows muliple acquire and realese however th
 
 To avoide this exception BoundedSemaphore() can be used this class handles this exception
 
-### Exception in threads
+## Exception in threads
 if exception occers in one thread it won't affect tther threads
 
 https://youtu.be/rmxjR79NhbE
 
-### Thread communication
+## Thread communication
 Thread communication can be done in 3 ways:
         
 1. Event object
@@ -60,7 +60,7 @@ Thread communication can be done in 3 ways:
 
 event object can establish communication between two objects only
 
-### Resources
+## Resources
 Youtube Videos:
 * https://www.youtube.com/watch?v=GqHLztqy0PU
 * https://www.youtube.com/watch?v=IEEhzQoKtQU
