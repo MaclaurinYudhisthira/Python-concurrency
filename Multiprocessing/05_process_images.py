@@ -1,3 +1,4 @@
+
 import time
 import concurrent.futures
 from PIL import Image, ImageFilter
@@ -26,7 +27,7 @@ size = (1200, 1200)
 
 
 def process_image(img_name):
-    img = Image.open(img_name)
+    img = Image.open(f"../Threading/downloaded_images/{img_name}")
 
     img = img.filter(ImageFilter.GaussianBlur(15))
 
