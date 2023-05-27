@@ -60,11 +60,23 @@ Thread communication can be done in 3 ways:
 
 event object can establish communication between two objects only
 
+## Barrier
+A barrier is a synchronization primitive.
+
+It allows multiple threads to wait on the same barrier object instance (e.g. at the same point in code) until a predefined fixed number of threads arrive (e.g. the barrier is full), after which all threads are then notified and released to continue their execution. (source:https://superfastpython.com/thread-barrier-in-python/)
+
+https://youtu.be/3Y6l76AS4l4
+
+https://docs.python.org/3/library/threading.html#barrier-objects
+
+https://superfastpython.com/thread-barrier-in-python/
+
 ## Resources
 Youtube Videos:
 * https://www.youtube.com/watch?v=GqHLztqy0PU
 * https://www.youtube.com/watch?v=IEEhzQoKtQU
 * https://www.youtube.com/playlist?list=PLI4OVrCFuY57b_16D8xs7-hmABHncVD_w
+* https://youtu.be/3Y6l76AS4l4
 
 Docs:
 * https://docs.python.org/3/library/concurrency.html
@@ -76,3 +88,5 @@ Docs:
 * https://en.wikipedia.org/wiki/Lock_(computer_science)
 * https://www.geeksforgeeks.org/python-difference-between-lock-and-rlock-objects/
 * https://en.wikipedia.org/wiki/Semaphore_(programming) 
+* https://docs.python.org/3/library/threading.html#barrier-objects
+* https://superfastpython.com/thread-barrier-in-python/
