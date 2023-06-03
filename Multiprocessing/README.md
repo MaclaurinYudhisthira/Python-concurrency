@@ -17,5 +17,14 @@ Comperison of both is given here:
 
 https://superfastpython.com/multiprocessing-pool-vs-processpoolexecutor/
 
+## Inter process commutication
+1. Queue (https://www.youtube.com/watch?v=sp7EhjLkFY4)
+2. Pipe (https://superfastpython.com/multiprocessing-pipe-in-python/)iab
+3. Shared variable (Array and value) (https://youtu.be/uWbSc84he2Q)
+4. Socket
+5. Rest API
+6. File IO
+7. DB IO
+
 ## Source Tutorial:
 https://youtu.be/fKl2JW_qrso
