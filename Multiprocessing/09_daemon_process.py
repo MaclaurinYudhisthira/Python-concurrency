@@ -3,7 +3,9 @@
     This code is written for python 3.8
 
     pip install playsound
+    sudo apt install libgirepository1.0-dev
     pip install pygobject
+
 
 '''
 
@@ -26,8 +28,9 @@ if __name__ == "__main__":
     print("Main process starts here.")
     numbers = [2,3,5]
 
-    p = multiprocessing.Process(target=child)
-    # p = multiprocessing.Process(target=child, daemon=True)
+    # p = multiprocessing.Process(target=child)
+    p = multiprocessing.Process(target=child, daemon=True)
 
     p.start()
+    p.join()
     print("Main process ends here.")
