@@ -1,7 +1,7 @@
 # Python-concurrency
 
 ## Threading 
-(~Detailed https://github.com/MaclaurinYudhisthira/Python-concurrency/tree/main/Multiprocessing#multiprocessing~)
+(`Detailed https://github.com/MaclaurinYudhisthira/Python-concurrency/tree/main/Multiprocessing#multiprocessing`)
 1. Multithreading (https://en.wikipedia.org/wiki/Multithreading_(computer_architecture))
 2. Thread (https://en.wikipedia.org/wiki/Thread_(computing))
 3. Thread pool, thread pool executor (https://en.wikipedia.org/wiki/Pool_(computer_science))
