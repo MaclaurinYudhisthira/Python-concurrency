@@ -30,3 +30,9 @@ Under cunstruction!!
 1. Race condition
 2. Dead lock
 3. Live lock
+
+## Generic/Common Resources
+1. https://docs.python.org/3/library/concurrency.html
+2. https://superfastpython.com/learning-paths/
+3. https://youtu.be/IEEhzQoKtQU
+4. https://www.youtube.com/watch?v=fKl2JW_qrso
