@@ -12,7 +12,7 @@
 (>>> Detailed [Readme](https://github.com/MaclaurinYudhisthira/Python-concurrency/tree/main/Threading#readme) for Multiprocessing)
 1. Process
 2. Thread vs Process (https://www.geeksforgeeks.org/difference-between-process-and-thread/)
-3. Daemon Process (https://www.ibm.com/docs/en/aix/7.1?topic=processes-)4
+3. Daemon Process (https://www.ibm.com/docs/en/aix/7.1?topic=processes-4)
 4. Fork & spawn (https://superfastpython.com/fork-faster-than-spawn/)
 
 ## Asyncio
