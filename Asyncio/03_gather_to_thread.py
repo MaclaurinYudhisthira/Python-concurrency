@@ -1,6 +1,6 @@
 '''
     
-    This code is written for python version 3.9
+    This code is written for python version 3.11
 
     Source: https://youtu.be/6RbJYN7SoRs
 
@@ -11,15 +11,15 @@ from time import perf_counter
 
 import requests
 
-# JSON =  int | str | float | bool | None | dict[str, "JSON"] | list["JSON"]
-# JSONObject = dict[str, JSON]
-# JSONList = list[JSON]
+JSON =  int | str | float | bool | None | dict[str, "JSON"] | list["JSON"]
+JSONObject = dict[str, JSON]
+JSONList = list[JSON]
 
-def http_get_sync(url:str):
+def http_get_sync(url:str) -> JSONObject:
     response = requests.get(url)
     return response.json()
 
-async def http_get(url:str):
+async def http_get(url:str) -> JSONObject:
     return await asyncio.to_thread(http_get_sync, url)
 
 n=10
