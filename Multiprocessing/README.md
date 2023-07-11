@@ -21,10 +21,12 @@ https://superfastpython.com/multiprocessing-pool-vs-processpoolexecutor/
 1. Queue (https://www.youtube.com/watch?v=sp7EhjLkFY4)
 2. Pipe (https://superfastpython.com/multiprocessing-pipe-in-python/)iab
 3. Shared variable (Array and value) (https://youtu.be/uWbSc84he2Q)
-4. Socket
-5. Rest API
-6. File IO
-7. DB IO
+4. Manger (https://www.youtube.com/watch?v=tKdolYuydVE)
+5. Socket
+6. Rest API
+7. File IO
+8. DB IO
 
 ## Source Tutorial:
 https://youtu.be/fKl2JW_qrso
+https://docs.python.org/3/library/multiprocessing.shared_memory.html
